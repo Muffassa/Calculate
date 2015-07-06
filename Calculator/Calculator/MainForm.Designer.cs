@@ -57,7 +57,7 @@
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(220, 20);
             this.Result.TabIndex = 2;
-            this.Result.TextChanged += new System.EventHandler(this.Result_TextChanged);
+            this.Result.TextChanged += new System.EventHandler(this.ResultTextChanged);
             // 
             // buttonMultiplication
             // 
@@ -67,7 +67,7 @@
             this.buttonMultiplication.TabIndex = 13;
             this.buttonMultiplication.Text = "*";
             this.buttonMultiplication.UseVisualStyleBackColor = true;
-            this.buttonMultiplication.Click += new System.EventHandler(this.buttonMultiplication_Click);
+            this.buttonMultiplication.Click += new System.EventHandler(this.ButtonMultiplicationClick);
             // 
             // buttonDivision
             // 
@@ -77,7 +77,7 @@
             this.buttonDivision.TabIndex = 15;
             this.buttonDivision.Text = "/";
             this.buttonDivision.UseVisualStyleBackColor = true;
-            this.buttonDivision.Click += new System.EventHandler(this.buttonDivision_Click);
+            this.buttonDivision.Click += new System.EventHandler(this.ButtonDivisionClick);
             // 
             // buttonSum
             // 
@@ -87,7 +87,7 @@
             this.buttonSum.TabIndex = 16;
             this.buttonSum.Text = "+";
             this.buttonSum.UseVisualStyleBackColor = true;
-            this.buttonSum.Click += new System.EventHandler(this.buttonSum_Click);
+            this.buttonSum.Click += new System.EventHandler(this.ButtonSumClick);
             // 
             // buttonSubtraction
             // 
@@ -97,7 +97,7 @@
             this.buttonSubtraction.TabIndex = 17;
             this.buttonSubtraction.Text = "-";
             this.buttonSubtraction.UseVisualStyleBackColor = true;
-            this.buttonSubtraction.Click += new System.EventHandler(this.buttonSubtraction_Click);
+            this.buttonSubtraction.Click += new System.EventHandler(this.ButtonSubtractionClick);
             // 
             // MainForm
             // 

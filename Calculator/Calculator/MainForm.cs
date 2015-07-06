@@ -23,50 +23,58 @@ namespace Calculator
         }
 
         
-
-        private void buttonMultiplication_Click(object sender, EventArgs e)
+        private void ButtonMultiplicationClick(object sender, EventArgs e)
         {
-                double firstArgument = Convert.ToDouble(FirstArgument.Text);
-                double secondArgument = Convert.ToDouble(SecondArgument.Text);
-
-                double result = firstArgument*secondArgument;
-
-                Result.Text = Convert.ToString(result);
+            double firstArgument, secondArgument;
+            if (double.TryParse(FirstArgument.Text, out firstArgument) &&
+                double.TryParse(SecondArgument.Text, out secondArgument))
+            {
+                Result.Text = Convert.ToString(firstArgument * secondArgument);
+            }
+            else
+                Result.Text = "Error";
         }
 
-        private void Result_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void buttonDivision_Click(object sender, EventArgs e)
+        private void ResultTextChanged(object sender, EventArgs e)
         {
             
-            double firstArgument = Convert.ToDouble(FirstArgument.Text),
-                secondArgument = Convert.ToDouble(SecondArgument.Text);
-
-            double result = firstArgument / secondArgument;
-
-            Result.Text = Convert.ToString(result);
         }
 
-        private void buttonSum_Click(object sender, EventArgs e)
+        private void ButtonDivisionClick(object sender, EventArgs e)
+        {
+
+            double firstArgument, secondArgument;
+            if (double.TryParse(FirstArgument.Text, out firstArgument) &&
+                double.TryParse(SecondArgument.Text, out secondArgument))
+            {
+                if(secondArgument != 0)
+                {
+                    Result.Text = Convert.ToString(firstArgument / secondArgument);
+                }else Result.Text = "Error";
+            }
+            else Result.Text = "Error";
+        }
+
+        private void ButtonSumClick(object sender, EventArgs e)
         {
             double firstArgument, secondArgument;
             if (double.TryParse(FirstArgument.Text, out firstArgument) &&
                 double.TryParse(SecondArgument.Text, out secondArgument))
             {
                 Result.Text = Convert.ToString(firstArgument + secondArgument);
-            }
+            }else
             Result.Text = "Error";
         }
 
-        private void buttonSubtraction_Click(object sender, EventArgs e)
+        private void ButtonSubtractionClick(object sender, EventArgs e)
         {
-            double firstArgument = Double.Parse(FirstArgument.Text),
-                secondArgument = Double.Parse(SecondArgument.Text);
-
-            Result.Text = Convert.ToString(firstArgument - secondArgument);
+            double firstArgument, secondArgument;
+            if (double.TryParse(FirstArgument.Text, out firstArgument) &&
+                double.TryParse(SecondArgument.Text, out secondArgument))
+            {
+                Result.Text = Convert.ToString(firstArgument - secondArgument);
+            }else
+            Result.Text = "Error";
         }
     }
 }
