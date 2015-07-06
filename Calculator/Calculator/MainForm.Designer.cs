@@ -31,10 +31,10 @@
             this.FirstArgument = new System.Windows.Forms.TextBox();
             this.SecondArgument = new System.Windows.Forms.TextBox();
             this.Result = new System.Windows.Forms.TextBox();
-            this.buttonMultiplication = new System.Windows.Forms.Button();
-            this.buttonDivision = new System.Windows.Forms.Button();
-            this.buttonSum = new System.Windows.Forms.Button();
-            this.buttonSubtraction = new System.Windows.Forms.Button();
+            this.Multiplication = new System.Windows.Forms.Button();
+            this.Division = new System.Windows.Forms.Button();
+            this.Sum = new System.Windows.Forms.Button();
+            this.Subtraction = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -59,55 +59,55 @@
             this.Result.TabIndex = 2;
             this.Result.TextChanged += new System.EventHandler(this.ResultTextChanged);
             // 
-            // buttonMultiplication
+            // Multiplication
             // 
-            this.buttonMultiplication.Location = new System.Drawing.Point(12, 91);
-            this.buttonMultiplication.Name = "buttonMultiplication";
-            this.buttonMultiplication.Size = new System.Drawing.Size(50, 46);
-            this.buttonMultiplication.TabIndex = 13;
-            this.buttonMultiplication.Text = "*";
-            this.buttonMultiplication.UseVisualStyleBackColor = true;
-            this.buttonMultiplication.Click += new System.EventHandler(this.ButtonMultiplicationClick);
+            this.Multiplication.Location = new System.Drawing.Point(12, 91);
+            this.Multiplication.Name = "Multiplication";
+            this.Multiplication.Size = new System.Drawing.Size(50, 46);
+            this.Multiplication.TabIndex = 13;
+            this.Multiplication.Text = "*";
+            this.Multiplication.UseVisualStyleBackColor = true;
+            this.Multiplication.Click += new System.EventHandler(this.Calculate);
             // 
-            // buttonDivision
+            // Division
             // 
-            this.buttonDivision.Location = new System.Drawing.Point(68, 91);
-            this.buttonDivision.Name = "buttonDivision";
-            this.buttonDivision.Size = new System.Drawing.Size(50, 46);
-            this.buttonDivision.TabIndex = 15;
-            this.buttonDivision.Text = "/";
-            this.buttonDivision.UseVisualStyleBackColor = true;
-            this.buttonDivision.Click += new System.EventHandler(this.ButtonDivisionClick);
+            this.Division.Location = new System.Drawing.Point(68, 91);
+            this.Division.Name = "Division";
+            this.Division.Size = new System.Drawing.Size(50, 46);
+            this.Division.TabIndex = 15;
+            this.Division.Text = "/";
+            this.Division.UseVisualStyleBackColor = true;
+            this.Division.Click += new System.EventHandler(this.Calculate);
             // 
-            // buttonSum
+            // Sum
             // 
-            this.buttonSum.Location = new System.Drawing.Point(124, 91);
-            this.buttonSum.Name = "buttonSum";
-            this.buttonSum.Size = new System.Drawing.Size(51, 46);
-            this.buttonSum.TabIndex = 16;
-            this.buttonSum.Text = "+";
-            this.buttonSum.UseVisualStyleBackColor = true;
-            this.buttonSum.Click += new System.EventHandler(this.ButtonSumClick);
+            this.Sum.Location = new System.Drawing.Point(124, 91);
+            this.Sum.Name = "Sum";
+            this.Sum.Size = new System.Drawing.Size(51, 46);
+            this.Sum.TabIndex = 16;
+            this.Sum.Text = "+";
+            this.Sum.UseVisualStyleBackColor = true;
+            this.Sum.Click += new System.EventHandler(this.Calculate);
             // 
-            // buttonSubtraction
+            // Subtraction
             // 
-            this.buttonSubtraction.Location = new System.Drawing.Point(181, 91);
-            this.buttonSubtraction.Name = "buttonSubtraction";
-            this.buttonSubtraction.Size = new System.Drawing.Size(51, 46);
-            this.buttonSubtraction.TabIndex = 17;
-            this.buttonSubtraction.Text = "-";
-            this.buttonSubtraction.UseVisualStyleBackColor = true;
-            this.buttonSubtraction.Click += new System.EventHandler(this.ButtonSubtractionClick);
+            this.Subtraction.Location = new System.Drawing.Point(181, 91);
+            this.Subtraction.Name = "Subtraction";
+            this.Subtraction.Size = new System.Drawing.Size(51, 46);
+            this.Subtraction.TabIndex = 17;
+            this.Subtraction.Text = "-";
+            this.Subtraction.UseVisualStyleBackColor = true;
+            this.Subtraction.Click += new System.EventHandler(this.Calculate);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(239, 144);
-            this.Controls.Add(this.buttonSubtraction);
-            this.Controls.Add(this.buttonSum);
-            this.Controls.Add(this.buttonDivision);
-            this.Controls.Add(this.buttonMultiplication);
+            this.Controls.Add(this.Subtraction);
+            this.Controls.Add(this.Sum);
+            this.Controls.Add(this.Division);
+            this.Controls.Add(this.Multiplication);
             this.Controls.Add(this.Result);
             this.Controls.Add(this.SecondArgument);
             this.Controls.Add(this.FirstArgument);
@@ -125,10 +125,10 @@
         private System.Windows.Forms.TextBox FirstArgument;
         private System.Windows.Forms.TextBox SecondArgument;
         private System.Windows.Forms.TextBox Result;
-        private System.Windows.Forms.Button buttonMultiplication;
-        private System.Windows.Forms.Button buttonDivision;
-        private System.Windows.Forms.Button buttonSum;
-        private System.Windows.Forms.Button buttonSubtraction;
+        private System.Windows.Forms.Button Multiplication;
+        private System.Windows.Forms.Button Division;
+        private System.Windows.Forms.Button Sum;
+        private System.Windows.Forms.Button Subtraction;
 
     }
 }
