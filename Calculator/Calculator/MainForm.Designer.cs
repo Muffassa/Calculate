@@ -57,6 +57,7 @@
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(220, 20);
             this.Result.TabIndex = 2;
+            this.Result.TextChanged += new System.EventHandler(this.Result_TextChanged);
             // 
             // buttonMultiplication
             // 
@@ -66,6 +67,7 @@
             this.buttonMultiplication.TabIndex = 13;
             this.buttonMultiplication.Text = "*";
             this.buttonMultiplication.UseVisualStyleBackColor = true;
+            this.buttonMultiplication.Click += new System.EventHandler(this.buttonMultiplication_Click);
             // 
             // buttonDivision
             // 
@@ -75,6 +77,7 @@
             this.buttonDivision.TabIndex = 15;
             this.buttonDivision.Text = "/";
             this.buttonDivision.UseVisualStyleBackColor = true;
+            this.buttonDivision.Click += new System.EventHandler(this.buttonDivision_Click);
             // 
             // buttonSum
             // 
