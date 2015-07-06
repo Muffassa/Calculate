@@ -22,30 +22,68 @@ namespace Calculator
 
         }
 
+        bool IsValid(string s)
+        {
+            char str = Convert.ToChar(s);
+
+            if (Char.IsDigit(str))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         private void buttonMultiplication_Click(object sender, EventArgs e)
         {
-            int firstArgument = Convert.ToInt32(FirstArgument.Text),
-                secondArgument = Convert.ToInt32(SecondArgument.Text);
+            if ((IsValid(FirstArgument.Text)) && (IsValid(SecondArgument.Text)))
+            {
+                double firstArgument = Convert.ToDouble(FirstArgument.Text);
+                double secondArgument = Convert.ToDouble(SecondArgument.Text);
 
-            int result = firstArgument*secondArgument;
+                double result = firstArgument*secondArgument;
 
-            Result.Text = Convert.ToString(result);
+                Result.Text = Convert.ToString(result);
+            }
+            else
+            {
+                Result.Text = "Error";
+            }
 
         }
 
         private void Result_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
         private void buttonDivision_Click(object sender, EventArgs e)
         {
-            int firstArgument = Convert.ToInt32(FirstArgument.Text),
-                secondArgument = Convert.ToInt32(SecondArgument.Text);
+            
+            double firstArgument = Convert.ToDouble(FirstArgument.Text),
+                secondArgument = Convert.ToDouble(SecondArgument.Text);
 
-            int result = firstArgument / secondArgument;
+            double result = firstArgument / secondArgument;
 
             Result.Text = Convert.ToString(result);
+        }
+
+        private void buttonSum_Click(object sender, EventArgs e)
+        {
+            double firstArgument = Double.Parse(FirstArgument.Text),
+                secondArgument = Double.Parse(SecondArgument.Text);
+
+            Result.Text = Convert.ToString(firstArgument + secondArgument);
+        }
+
+        private void buttonSubtraction_Click(object sender, EventArgs e)
+        {
+            double firstArgument = Double.Parse(FirstArgument.Text),
+                secondArgument = Double.Parse(SecondArgument.Text);
+
+            Result.Text = Convert.ToString(firstArgument - secondArgument);
         }
     }
 }

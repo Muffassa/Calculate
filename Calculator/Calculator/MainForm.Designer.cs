@@ -87,6 +87,7 @@
             this.buttonSum.TabIndex = 16;
             this.buttonSum.Text = "+";
             this.buttonSum.UseVisualStyleBackColor = true;
+            this.buttonSum.Click += new System.EventHandler(this.buttonSum_Click);
             // 
             // buttonSubtraction
             // 
@@ -96,6 +97,7 @@
             this.buttonSubtraction.TabIndex = 17;
             this.buttonSubtraction.Text = "-";
             this.buttonSubtraction.UseVisualStyleBackColor = true;
+            this.buttonSubtraction.Click += new System.EventHandler(this.buttonSubtraction_Click);
             // 
             // MainForm
             // 
