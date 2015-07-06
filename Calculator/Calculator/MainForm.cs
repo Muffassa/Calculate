@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Calculator
@@ -19,99 +12,46 @@ namespace Calculator
 
         private void Calculate(object sender, EventArgs e)
         {
-            double firstArgument, secondArgument;
+            double firstArgument, 
+                secondArgument;
             if (double.TryParse(FirstArgument.Text, out firstArgument) &&
                 double.TryParse(SecondArgument.Text, out secondArgument))
             {
+                double result;
                 switch (((Button) sender).Name)
                 {
-                    case "Sum":
-                    {
-                        Result.Text = Convert.ToString(firstArgument + secondArgument);
-                    }
+                    case "Sum": 
+                        result = firstArgument + secondArgument;
                         break;
-                    case "Subtraction":
-                    {
-                        Result.Text = Convert.ToString(firstArgument - secondArgument);
-                    }
+
+                    case "Subtraction": 
+                        result = firstArgument - secondArgument;
                         break;
-                    case "Multiplication":
-                    {
-                        Result.Text = Convert.ToString(firstArgument * secondArgument);
-                    }
+
+                    case "Multiplication": 
+                        result = firstArgument * secondArgument;
                         break;
+                 
                     case "Division":
-                    {
-                        Result.Text = secondArgument != 0 ? Convert.ToString(firstArgument/secondArgument) : "Error";
-                    } 
+                        if (secondArgument == 0)
+                        {
+                            throw new Exception("Devision by zero");
+                            
+                        }
+
+                        result = firstArgument/secondArgument;
                         break;
+
+                    default: 
+                        throw new Exception(); 
                 }
+
+                Result.Text = Convert.ToString(result);
             }
             else
             {
-                Result.Text = "Error";
+                throw new Exception();
             }
         }
-
-        private void ResultTextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        //void ButtonMultiplicationClick(object sender, EventArgs e)
-        //{
-        //    double firstArgument, secondArgument;
-        //    if (double.TryParse(FirstArgument.Text, out firstArgument) &&
-        //        double.TryParse(SecondArgument.Text, out secondArgument))
-        //    {
-        //        Result.Text = Convert.ToString(firstArgument * secondArgument);
-        //    }
-        //    else
-        //        Result.Text = "Error";
-        //}
-
-        //private void ResultTextChanged(object sender, EventArgs e)
-        //{
-            
-        //}
-
-        //private void ButtonDivisionClick(object sender, EventArgs e)
-        //{
-
-        //    double firstArgument, secondArgument;
-        //    if (double.TryParse(FirstArgument.Text, out firstArgument) &&
-        //        double.TryParse(SecondArgument.Text, out secondArgument))
-        //    {
-        //        if(secondArgument != 0)
-        //        {
-        //            Result.Text = Convert.ToString(firstArgument / secondArgument);
-        //        }else Result.Text = "Error";
-        //    }
-        //    else Result.Text = "Error";
-        //}
-
-        //private void ButtonSumClick(object sender, EventArgs e)
-        //{
-        //    double firstArgument, secondArgument;
-        //    if (double.TryParse(FirstArgument.Text, out firstArgument) &&
-        //        double.TryParse(SecondArgument.Text, out secondArgument))
-        //    {
-        //        Result.Text = Convert.ToString(firstArgument + secondArgument);
-        //    } else
-        //    Result.Text = "Error";
-        //}
-
-        //private void ButtonSubtractionClick(object sender, EventArgs e)
-        //{
-        //    double firstArgument, secondArgument;
-        //    if (double.TryParse(FirstArgument.Text, out firstArgument) &&
-        //        double.TryParse(SecondArgument.Text, out secondArgument))
-        //    {
-        //        Result.Text = Convert.ToString(firstArgument - secondArgument);
-        //    }else
-        //    Result.Text = "Error";
-        //}
     }
 }

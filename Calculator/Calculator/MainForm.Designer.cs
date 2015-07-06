@@ -1,11 +1,14 @@
-﻿namespace Calculator
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace Calculator
 {
     partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -57,7 +60,6 @@
             this.Result.Name = "Result";
             this.Result.Size = new System.Drawing.Size(220, 20);
             this.Result.TabIndex = 2;
-            this.Result.TextChanged += new System.EventHandler(this.ResultTextChanged);
             // 
             // Multiplication
             // 
@@ -122,13 +124,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox FirstArgument;
-        private System.Windows.Forms.TextBox SecondArgument;
-        private System.Windows.Forms.TextBox Result;
-        private System.Windows.Forms.Button Multiplication;
-        private System.Windows.Forms.Button Division;
-        private System.Windows.Forms.Button Sum;
-        private System.Windows.Forms.Button Subtraction;
+        private TextBox FirstArgument;
+        private TextBox SecondArgument;
+        private TextBox Result;
+        private Button Multiplication;
+        private Button Division;
+        private Button Sum;
+        private Button Subtraction;
 
     }
 }
