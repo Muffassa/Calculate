@@ -171,7 +171,7 @@ namespace Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 252);
+            this.ClientSize = new System.Drawing.Size(233, 245);
             this.Controls.Add(this.Cos);
             this.Controls.Add(this.Factorial);
             this.Controls.Add(this.Sqrt);

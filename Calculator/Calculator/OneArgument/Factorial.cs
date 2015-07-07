@@ -6,12 +6,19 @@ namespace Calculator.OneArgument
     {
         public double Calculate(double firstArgument)
         {
-            double result = 1;
-            for (int i = 1; i < firstArgument; i++)
+            if (firstArgument < 0)
             {
-                result *= i+1;
+                throw new Exception("Cant use argument < 0");
             }
-            return result;
+            else
+            {
+                double result = 1;
+                for (int i = 1; i < firstArgument; i++)
+                {
+                    result *= i + 1;
+                }
+                return result;
+            }
         }
     }
 }
