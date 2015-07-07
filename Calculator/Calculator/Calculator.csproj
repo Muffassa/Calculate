@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Absolute.cs" />
+    <Compile Include="Division.cs" />
+    <Compile Include="Multiplication.cs" />
+    <Compile Include="Sin.cs" />
+    <Compile Include="Subtraction.cs" />
+    <Compile Include="Sum.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

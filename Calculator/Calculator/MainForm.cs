@@ -12,8 +12,7 @@ namespace Calculator
 
         private double StringToDouble(string text)
         {
-            double result = double.Parse(text);
-            return result;
+            return double.Parse(text);
         }
 
         private void Calculate(object sender, EventArgs e)
