@@ -71,7 +71,7 @@ namespace Calculator
             this.Multiplication.TabIndex = 13;
             this.Multiplication.Text = "*";
             this.Multiplication.UseVisualStyleBackColor = true;
-            this.Multiplication.Click += new System.EventHandler(this.Calculate);
+            this.Multiplication.Click += new System.EventHandler(this.CalculateTwoArgument);
             // 
             // Division
             // 
@@ -81,7 +81,7 @@ namespace Calculator
             this.Division.TabIndex = 15;
             this.Division.Text = "/";
             this.Division.UseVisualStyleBackColor = true;
-            this.Division.Click += new System.EventHandler(this.Calculate);
+            this.Division.Click += new System.EventHandler(this.CalculateTwoArgument);
             // 
             // Sum
             // 
@@ -91,7 +91,7 @@ namespace Calculator
             this.Sum.TabIndex = 16;
             this.Sum.Text = "+";
             this.Sum.UseVisualStyleBackColor = true;
-            this.Sum.Click += new System.EventHandler(this.Calculate);
+            this.Sum.Click += new System.EventHandler(this.CalculateTwoArgument);
             // 
             // Subtraction
             // 
@@ -101,7 +101,7 @@ namespace Calculator
             this.Subtraction.TabIndex = 17;
             this.Subtraction.Text = "-";
             this.Subtraction.UseVisualStyleBackColor = true;
-            this.Subtraction.Click += new System.EventHandler(this.Calculate);
+            this.Subtraction.Click += new System.EventHandler(this.CalculateTwoArgument);
             // 
             // Abs
             // 
@@ -111,7 +111,7 @@ namespace Calculator
             this.Abs.TabIndex = 18;
             this.Abs.Text = "Abs";
             this.Abs.UseVisualStyleBackColor = true;
-            this.Abs.Click += new System.EventHandler(this.CalculateSingleArgument);
+            this.Abs.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
             // Sin
             // 
@@ -121,7 +121,7 @@ namespace Calculator
             this.Sin.TabIndex = 19;
             this.Sin.Text = "Sin";
             this.Sin.UseVisualStyleBackColor = true;
-            this.Sin.Click += new System.EventHandler(this.CalculateSingleArgument);
+            this.Sin.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
             // MainForm
             // 

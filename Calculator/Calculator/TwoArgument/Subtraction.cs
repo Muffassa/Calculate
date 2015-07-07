@@ -1,10 +1,12 @@
-﻿namespace Calculator.TwoArgument
+﻿using System;
+
+namespace Calculator.TwoArgument
 {
-    class Subtraction
+    class Subtraction:IOperation
     {
         public double Calculate(double firstArgument, double secondArgument)
         {
-            return firstArgument - secondArgument;
+                return firstArgument - secondArgument;
         }
     }
 }
