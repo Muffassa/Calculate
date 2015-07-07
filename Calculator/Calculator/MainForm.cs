@@ -12,9 +12,7 @@ namespace Calculator
 
         private double StringToDouble(string text)
         {
-            double result;
-            double.TryParse(text, out result);
-
+            double result = double.Parse(text);
             return result;
         }
 
@@ -24,7 +22,7 @@ namespace Calculator
             double secondArgument = StringToDouble(SecondArgument.Text);
 
             double result;
-            switch (((Button)sender).Name)
+            switch (((Button) sender).Name)
             {
                 case "Sum":
                     result = firstArgument + secondArgument;
@@ -45,6 +43,28 @@ namespace Calculator
                     }
 
                     result = firstArgument/secondArgument;
+                    break;
+
+                default:
+                    throw new Exception("Unknown operation");
+            }
+
+            Result.Text = Convert.ToString(result);
+        }
+
+        private void CalculateSingleArgument(object sender, EventArgs e)
+        {
+            double firstArgument = StringToDouble(FirstArgument.Text);
+
+            double result;
+            switch (((Button)sender).Name)
+            {
+                case "Sin":
+                    result = Math.Sin(firstArgument);
+                    break;
+
+                case "Abs":
+                    result = Math.Abs(firstArgument);
                     break;
 
                 default:
