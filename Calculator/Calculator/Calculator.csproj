@@ -45,12 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Absolute.cs" />
+    <Compile Include="OneArgument\Absolute.cs" />
     <Compile Include="Division.cs" />
-    <Compile Include="Multiplication.cs" />
-    <Compile Include="Sin.cs" />
-    <Compile Include="Subtraction.cs" />
-    <Compile Include="Sum.cs" />
+    <Compile Include="OneArgument\IOperation.cs" />
+    <Compile Include="TwoArgument\IOperation.cs" />
+    <Compile Include="TwoArgument\Multiplication.cs" />
+    <Compile Include="OneArgument\Sin.cs" />
+    <Compile Include="TwoArgument\Subtraction.cs" />
+    <Compile Include="TwoArgument\Sum.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
