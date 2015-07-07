@@ -40,6 +40,10 @@ namespace Calculator
             this.Subtraction = new System.Windows.Forms.Button();
             this.Abs = new System.Windows.Forms.Button();
             this.Sin = new System.Windows.Forms.Button();
+            this.Pow = new System.Windows.Forms.Button();
+            this.Sqrt = new System.Windows.Forms.Button();
+            this.Factorial = new System.Windows.Forms.Button();
+            this.Cos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -105,9 +109,9 @@ namespace Calculator
             // 
             // Abs
             // 
-            this.Abs.Location = new System.Drawing.Point(12, 144);
+            this.Abs.Location = new System.Drawing.Point(13, 143);
             this.Abs.Name = "Abs";
-            this.Abs.Size = new System.Drawing.Size(106, 23);
+            this.Abs.Size = new System.Drawing.Size(50, 46);
             this.Abs.TabIndex = 18;
             this.Abs.Text = "Abs";
             this.Abs.UseVisualStyleBackColor = true;
@@ -115,19 +119,63 @@ namespace Calculator
             // 
             // Sin
             // 
-            this.Sin.Location = new System.Drawing.Point(124, 144);
+            this.Sin.Location = new System.Drawing.Point(13, 195);
             this.Sin.Name = "Sin";
-            this.Sin.Size = new System.Drawing.Size(108, 23);
+            this.Sin.Size = new System.Drawing.Size(50, 45);
             this.Sin.TabIndex = 19;
             this.Sin.Text = "Sin";
             this.Sin.UseVisualStyleBackColor = true;
             this.Sin.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
+            // Pow
+            // 
+            this.Pow.Location = new System.Drawing.Point(69, 143);
+            this.Pow.Name = "Pow";
+            this.Pow.Size = new System.Drawing.Size(51, 45);
+            this.Pow.TabIndex = 20;
+            this.Pow.Text = "Pow";
+            this.Pow.UseVisualStyleBackColor = true;
+            this.Pow.Click += new System.EventHandler(this.CalculateTwoArgument);
+            // 
+            // Sqrt
+            // 
+            this.Sqrt.Location = new System.Drawing.Point(126, 144);
+            this.Sqrt.Name = "Sqrt";
+            this.Sqrt.Size = new System.Drawing.Size(51, 45);
+            this.Sqrt.TabIndex = 21;
+            this.Sqrt.Text = "Sqrt";
+            this.Sqrt.UseVisualStyleBackColor = true;
+            this.Sqrt.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // Factorial
+            // 
+            this.Factorial.Location = new System.Drawing.Point(181, 144);
+            this.Factorial.Name = "Factorial";
+            this.Factorial.Size = new System.Drawing.Size(51, 44);
+            this.Factorial.TabIndex = 22;
+            this.Factorial.Text = "x!";
+            this.Factorial.UseVisualStyleBackColor = true;
+            this.Factorial.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
+            // Cos
+            // 
+            this.Cos.Location = new System.Drawing.Point(68, 195);
+            this.Cos.Name = "Cos";
+            this.Cos.Size = new System.Drawing.Size(50, 45);
+            this.Cos.TabIndex = 23;
+            this.Cos.Text = "Cos";
+            this.Cos.UseVisualStyleBackColor = true;
+            this.Cos.Click += new System.EventHandler(this.CalculateOneArgument);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(238, 175);
+            this.ClientSize = new System.Drawing.Size(283, 252);
+            this.Controls.Add(this.Cos);
+            this.Controls.Add(this.Factorial);
+            this.Controls.Add(this.Sqrt);
+            this.Controls.Add(this.Pow);
             this.Controls.Add(this.Sin);
             this.Controls.Add(this.Abs);
             this.Controls.Add(this.Subtraction);
@@ -157,6 +205,10 @@ namespace Calculator
         private Button Subtraction;
         private Button Abs;
         private Button Sin;
+        private Button Pow;
+        private Button Sqrt;
+        private Button Factorial;
+        private Button Cos;
 
     }
 }

@@ -46,12 +46,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OneArgument\Absolute.cs" />
+    <Compile Include="OneArgument\Cos.cs" />
+    <Compile Include="OneArgument\Factorial.cs" />
+    <Compile Include="OneArgument\Sqrt.cs" />
     <Compile Include="TwoArgument\Division.cs" />
     <Compile Include="OneArgument\IOperation.cs" />
     <Compile Include="OneArgument\OneArgumentFactory.cs" />
     <Compile Include="TwoArgument\IOperation.cs" />
     <Compile Include="TwoArgument\Multiplication.cs" />
     <Compile Include="OneArgument\Sin.cs" />
+    <Compile Include="TwoArgument\Pow.cs" />
     <Compile Include="TwoArgument\Subtraction.cs" />
     <Compile Include="TwoArgument\Sum.cs" />
     <Compile Include="MainForm.cs">

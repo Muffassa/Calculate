@@ -24,6 +24,9 @@ namespace Calculator.TwoArgument
                 case "Subtraction":
                     return new Subtraction();
                     break;
+                case "Pow":
+                    return  new Pow();
+                    break;
                 default: throw new Exception("Unknown operation");
             }
         }
