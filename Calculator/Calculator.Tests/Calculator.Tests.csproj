@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="OneArgument\Absolute.Tests.cs" />
     <Compile Include="OneArgument\Cos.Tests.cs" />
     <Compile Include="OneArgument\Factorial.Tests.cs" />

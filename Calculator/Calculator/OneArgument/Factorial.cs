@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class Factorial : IOperation
+    public class Factorial : IOperation
     {
         public double Calculate(double firstArgument)
         {

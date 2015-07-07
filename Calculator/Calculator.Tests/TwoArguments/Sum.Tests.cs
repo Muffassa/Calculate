@@ -1,12 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Calculator.TwoArgument;
+using NUnit.Framework;
 
-namespace Calculator.Tests
+namespace Calculator.Tests.TwoArguments
 {
-    class Sum
+    
+    [TestFixture]
+    class SumTests
     {
+        [Test]
+        public void Calculate()
+        {
+            var calculator = new Sum();
+            var testResult = calculator.Calculate(5,5);
+            Assert.AreEqual(10,testResult);
+        }
     }
 }
+

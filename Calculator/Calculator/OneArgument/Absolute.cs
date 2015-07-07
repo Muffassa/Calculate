@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class Absolute : IOperation
+   public class Absolute : IOperation
     {
         public double Calculate(double firstArgument)
         {

@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    class Cos : IOperation
+    public class Cos : IOperation
     {
         public double Calculate(double firstArgument)
         {

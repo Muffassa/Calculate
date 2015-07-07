@@ -2,7 +2,7 @@
 
 namespace Calculator.TwoArgument
 {
-    class Division : IOperation
+   public class Division : IOperation
     {
         public double Calculate(double firstArgument, double secondArgument)
         {

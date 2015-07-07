@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator.OneArgument
 {
-    class OneArgumentFactory
+    public class OneArgumentFactory
     {
         public static IOperation CreateCalculator(string operation)
         {
