@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Calculator.TwoArgument;
 using NUnit.Framework;
 
-namespace Calculator.Tests
+namespace Calculator.Tests.TwoArguments
 {
 
     [TestFixture]
@@ -21,6 +17,14 @@ namespace Calculator.Tests
             var calculator = new Division();
             var testResult = calculator.Calculate(firstArgument, secondArgument);
             Assert.AreEqual(result, testResult);
+        }
+
+        [Test]
+        [ExpectedException(typeof(Exception))]
+        public void DivisionByZeroTests()
+        {
+            var calculator = new Division();
+            var result = calculator.Calculate(4, 0);
         }
     }
 }

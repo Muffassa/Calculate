@@ -23,5 +23,14 @@ namespace Calculator.Tests.OneArgument
             var result = Math.Sqrt(argument);
             Assert.AreEqual(testResult,result);
         }
+
+        [Test]
+        [ExpectedException(typeof(Exception))]
+        public void SqrtTestsByNegative()
+        {
+            var calculator = new Sqrt();
+            var result = calculator.Calculate(-4);
+        }
     }
 }
+

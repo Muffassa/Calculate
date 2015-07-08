@@ -19,5 +19,13 @@ namespace Calculator.Tests.OneArgument
             var testResult = calculator.Calculate(argument);
             Assert.AreEqual(result, testResult);
         }
+
+        [Test]
+        [ExpectedException(typeof(Exception))]
+        public void FactorialTestsByNegative()
+        {
+            var calculator = new Factorial();
+            var result = calculator.Calculate(-4);
+        }
     }
 }
