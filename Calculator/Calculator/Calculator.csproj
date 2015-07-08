@@ -49,6 +49,10 @@
     <Compile Include="OneArgument\Cos.cs" />
     <Compile Include="OneArgument\Factorial.cs" />
     <Compile Include="OneArgument\Sqrt.cs" />
+    <Compile Include="SortingOfMassivs\GnomeSort.cs" />
+    <Compile Include="SortingOfMassivs\HeapSort.cs" />
+    <Compile Include="SortingOfMassivs\IOperation.cs" />
+    <Compile Include="SortingOfMassivs\SortingOfMassivsFactory.cs" />
     <Compile Include="TwoArgument\Division.cs" />
     <Compile Include="OneArgument\IOperation.cs" />
     <Compile Include="OneArgument\OneArgumentFactory.cs" />
@@ -93,6 +97,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

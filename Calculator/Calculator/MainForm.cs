@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 using Calculator.TwoArgument;
 using Calculator.OneArgument;
+using Calculator.SortingOfMassivs;
 
 namespace Calculator
 {
@@ -15,6 +17,39 @@ namespace Calculator
         private double StringToDouble(string text)
         {
             return double.Parse(text);
+        }
+
+        private void SortingMassivs(object sender, EventArgs e)
+        {
+           string [] split = FirstArgument.Text.Split(new Char[]{' ', ';'});
+           double[] array = new double[split.Length];
+
+            for (int i = 0; i < split.Length; i++)
+            {
+                array[i] = StringToDouble(split[i]);
+            }
+
+            string operation = (((Button) sender).Name);
+            var op = SortingOfMassivsFactory.CreateSorting(operation);
+            double[] resultDoubleArray = op.Sort(array);
+
+            string[] resultStringArray = new string[split.Length];
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                resultStringArray[i] = Convert.ToString(resultDoubleArray[i]);
+            }
+
+            string resultString = "";
+
+            for (int i = 0; i < resultStringArray.Length; i++)
+            {
+                resultString += resultStringArray[i] + ';'+' ';
+            }
+
+            Result.Text = resultString;
+
+
         }
 
         private void CalculateTwoArgument(object sender, EventArgs e)

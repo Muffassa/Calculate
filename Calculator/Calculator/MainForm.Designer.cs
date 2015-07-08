@@ -44,6 +44,10 @@ namespace Calculator
             this.Sqrt = new System.Windows.Forms.Button();
             this.Factorial = new System.Windows.Forms.Button();
             this.Cos = new System.Windows.Forms.Button();
+            this.QuickSort = new System.Windows.Forms.Button();
+            this.CountingSort = new System.Windows.Forms.Button();
+            this.HeapSort = new System.Windows.Forms.Button();
+            this.GnomeSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FirstArgument
@@ -119,9 +123,9 @@ namespace Calculator
             // 
             // Sin
             // 
-            this.Sin.Location = new System.Drawing.Point(13, 195);
+            this.Sin.Location = new System.Drawing.Point(12, 195);
             this.Sin.Name = "Sin";
-            this.Sin.Size = new System.Drawing.Size(50, 45);
+            this.Sin.Size = new System.Drawing.Size(106, 45);
             this.Sin.TabIndex = 19;
             this.Sin.Text = "Sin";
             this.Sin.UseVisualStyleBackColor = true;
@@ -159,19 +163,61 @@ namespace Calculator
             // 
             // Cos
             // 
-            this.Cos.Location = new System.Drawing.Point(68, 195);
+            this.Cos.Location = new System.Drawing.Point(124, 195);
             this.Cos.Name = "Cos";
-            this.Cos.Size = new System.Drawing.Size(50, 45);
+            this.Cos.Size = new System.Drawing.Size(108, 45);
             this.Cos.TabIndex = 23;
             this.Cos.Text = "Cos";
             this.Cos.UseVisualStyleBackColor = true;
             this.Cos.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
+            // QuickSort
+            // 
+            this.QuickSort.Location = new System.Drawing.Point(12, 246);
+            this.QuickSort.Name = "QuickSort";
+            this.QuickSort.Size = new System.Drawing.Size(49, 44);
+            this.QuickSort.TabIndex = 24;
+            this.QuickSort.Text = "QuickSort";
+            this.QuickSort.UseVisualStyleBackColor = true;
+            // 
+            // CountingSort
+            // 
+            this.CountingSort.Location = new System.Drawing.Point(71, 246);
+            this.CountingSort.Name = "CountingSort";
+            this.CountingSort.Size = new System.Drawing.Size(49, 44);
+            this.CountingSort.TabIndex = 25;
+            this.CountingSort.Text = "CountingSort";
+            this.CountingSort.UseVisualStyleBackColor = true;
+            // 
+            // HeapSort
+            // 
+            this.HeapSort.Location = new System.Drawing.Point(128, 246);
+            this.HeapSort.Name = "HeapSort";
+            this.HeapSort.Size = new System.Drawing.Size(49, 44);
+            this.HeapSort.TabIndex = 26;
+            this.HeapSort.Text = "HeapSort";
+            this.HeapSort.UseVisualStyleBackColor = true;
+            this.HeapSort.Click += new System.EventHandler(this.SortingMassivs);
+            // 
+            // GnomeSort
+            // 
+            this.GnomeSort.Location = new System.Drawing.Point(183, 246);
+            this.GnomeSort.Name = "GnomeSort";
+            this.GnomeSort.Size = new System.Drawing.Size(49, 44);
+            this.GnomeSort.TabIndex = 27;
+            this.GnomeSort.Text = "GnomeSort";
+            this.GnomeSort.UseVisualStyleBackColor = true;
+            this.GnomeSort.Click += new System.EventHandler(this.SortingMassivs);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(233, 245);
+            this.ClientSize = new System.Drawing.Size(239, 295);
+            this.Controls.Add(this.GnomeSort);
+            this.Controls.Add(this.HeapSort);
+            this.Controls.Add(this.CountingSort);
+            this.Controls.Add(this.QuickSort);
             this.Controls.Add(this.Cos);
             this.Controls.Add(this.Factorial);
             this.Controls.Add(this.Sqrt);
@@ -209,6 +255,10 @@ namespace Calculator
         private Button Sqrt;
         private Button Factorial;
         private Button Cos;
+        private Button QuickSort;
+        private Button CountingSort;
+        private Button HeapSort;
+        private Button GnomeSort;
 
     }
 }
