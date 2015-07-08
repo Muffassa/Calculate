@@ -7,12 +7,14 @@ namespace Calculator.Tests.TwoArguments
     [TestFixture]
     class SumTests
     {
-        [Test]
-        public void Calculate()
+        [TestCase( 5, 5, 10)]
+        [TestCase(-5, 2, -3)]
+        [TestCase(-4, -8, -12)]
+        public void Calculate(double firstArgument, double secondArgument, double result)
         {
             var calculator = new Sum();
-            var testResult = calculator.Calculate(5,5);
-            Assert.AreEqual(10,testResult);
+            var testResult = calculator.Calculate(firstArgument,secondArgument);
+            Assert.AreEqual(result,testResult);
         }
     }
 }
