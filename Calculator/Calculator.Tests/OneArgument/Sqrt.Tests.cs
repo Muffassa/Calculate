@@ -12,12 +12,15 @@ namespace Calculator.Tests.OneArgument
     [TestFixture]
     class SqrtTests
     {
-        [Test]
-        public void Calculate()
+        [TestCase(9)]
+        [TestCase(25)]
+        [TestCase(16)]
+        [TestCase(4)]
+        public void Calculate(double argument)
         {
             var calculator = new Sqrt();
-            var testResult = calculator.Calculate(124);
-            var result = Math.Sqrt(124);
+            var testResult = calculator.Calculate(argument);
+            var result = Math.Sqrt(argument);
             Assert.AreEqual(testResult,result);
         }
     }

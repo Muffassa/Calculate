@@ -13,7 +13,7 @@ namespace Calculator.Tests.TwoArguments
     {
         [TestCase(12, 4, 8)]
         [TestCase(-12, -2, -10)]
-        [TestCase(4, -8, 4)]
+        [TestCase(4, -8, 12)]
         public void Calculate(double firstArgument, double secondArgument, double result)
         {
             var calculator = new Subtraction();
