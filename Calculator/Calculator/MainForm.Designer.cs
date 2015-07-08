@@ -44,8 +44,8 @@ namespace Calculator
             this.Sqrt = new System.Windows.Forms.Button();
             this.Factorial = new System.Windows.Forms.Button();
             this.Cos = new System.Windows.Forms.Button();
-            this.QuickSort = new System.Windows.Forms.Button();
-            this.CountingSort = new System.Windows.Forms.Button();
+            this.BubbleSort = new System.Windows.Forms.Button();
+            this.InsertionSort = new System.Windows.Forms.Button();
             this.HeapSort = new System.Windows.Forms.Button();
             this.GnomeSort = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -171,23 +171,25 @@ namespace Calculator
             this.Cos.UseVisualStyleBackColor = true;
             this.Cos.Click += new System.EventHandler(this.CalculateOneArgument);
             // 
-            // QuickSort
+            // BubbleSort
             // 
-            this.QuickSort.Location = new System.Drawing.Point(12, 246);
-            this.QuickSort.Name = "QuickSort";
-            this.QuickSort.Size = new System.Drawing.Size(49, 44);
-            this.QuickSort.TabIndex = 24;
-            this.QuickSort.Text = "QuickSort";
-            this.QuickSort.UseVisualStyleBackColor = true;
+            this.BubbleSort.Location = new System.Drawing.Point(12, 246);
+            this.BubbleSort.Name = "BubbleSort";
+            this.BubbleSort.Size = new System.Drawing.Size(49, 44);
+            this.BubbleSort.TabIndex = 24;
+            this.BubbleSort.Text = "BubbleSort";
+            this.BubbleSort.UseVisualStyleBackColor = true;
+            this.BubbleSort.Click += new System.EventHandler(this.SortingMassivs);
             // 
-            // CountingSort
+            // InsertionSort
             // 
-            this.CountingSort.Location = new System.Drawing.Point(71, 246);
-            this.CountingSort.Name = "CountingSort";
-            this.CountingSort.Size = new System.Drawing.Size(49, 44);
-            this.CountingSort.TabIndex = 25;
-            this.CountingSort.Text = "CountingSort";
-            this.CountingSort.UseVisualStyleBackColor = true;
+            this.InsertionSort.Location = new System.Drawing.Point(71, 246);
+            this.InsertionSort.Name = "InsertionSort";
+            this.InsertionSort.Size = new System.Drawing.Size(49, 44);
+            this.InsertionSort.TabIndex = 25;
+            this.InsertionSort.Text = "IsertionSort";
+            this.InsertionSort.UseVisualStyleBackColor = true;
+            this.InsertionSort.Click += new System.EventHandler(this.SortingMassivs);
             // 
             // HeapSort
             // 
@@ -216,8 +218,8 @@ namespace Calculator
             this.ClientSize = new System.Drawing.Size(239, 295);
             this.Controls.Add(this.GnomeSort);
             this.Controls.Add(this.HeapSort);
-            this.Controls.Add(this.CountingSort);
-            this.Controls.Add(this.QuickSort);
+            this.Controls.Add(this.InsertionSort);
+            this.Controls.Add(this.BubbleSort);
             this.Controls.Add(this.Cos);
             this.Controls.Add(this.Factorial);
             this.Controls.Add(this.Sqrt);
@@ -255,8 +257,8 @@ namespace Calculator
         private Button Sqrt;
         private Button Factorial;
         private Button Cos;
-        private Button QuickSort;
-        private Button CountingSort;
+        private Button BubbleSort;
+        private Button InsertionSort;
         private Button HeapSort;
         private Button GnomeSort;
 

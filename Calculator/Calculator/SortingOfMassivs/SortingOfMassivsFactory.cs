@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Calculator.SortingOfMassivs
 {
@@ -14,10 +10,12 @@ namespace Calculator.SortingOfMassivs
             {
                 case "HeapSort":
                     return new HeapSort();
-                    break;
                 case "GnomeSort":
                     return new GnomeSort();
-                    break;
+                case "BubbleSort":
+                    return new BubbleSort();
+                case "InsertionSort":
+                    return new InsertionSort();
                 default:
                     throw new Exception("Unknown operation");
             }

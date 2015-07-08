@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Calculator.OneArgument;
+﻿using Calculator.OneArgument;
 using NUnit.Framework;
 
 namespace Calculator.Tests.OneArgument
 {
     [TestFixture]
-    class AbsouluteTests
+    class CosTests
     {
-        [TestCase(-24, 24)]
+        [TestCase(0, 1)]
         public void Calculate(double argument, double result)
         {
-            var calculator = new Absolute();
+            var calculator = new Cos();
             var testResult = calculator.Calculate(argument);
             Assert.AreEqual(result, testResult);
         }

@@ -49,9 +49,11 @@
     <Compile Include="OneArgument\Cos.cs" />
     <Compile Include="OneArgument\Factorial.cs" />
     <Compile Include="OneArgument\Sqrt.cs" />
+    <Compile Include="SortingOfMassivs\InsertionSort.cs" />
     <Compile Include="SortingOfMassivs\GnomeSort.cs" />
     <Compile Include="SortingOfMassivs\HeapSort.cs" />
     <Compile Include="SortingOfMassivs\IOperation.cs" />
+    <Compile Include="SortingOfMassivs\BubbleSort.cs" />
     <Compile Include="SortingOfMassivs\SortingOfMassivsFactory.cs" />
     <Compile Include="TwoArgument\Division.cs" />
     <Compile Include="OneArgument\IOperation.cs" />

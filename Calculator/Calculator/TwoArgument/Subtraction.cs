@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Calculator.TwoArgument
+﻿namespace Calculator.TwoArgument
 {
    public class Subtraction:IOperation
     {

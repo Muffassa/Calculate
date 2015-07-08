@@ -42,19 +42,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OneArgument\Absolute.Tests.cs" />
-    <Compile Include="OneArgument\Cos.Tests.cs" />
-    <Compile Include="OneArgument\Factorial.Tests.cs" />
-    <Compile Include="OneArgument\OneArgumetFactory.Tests.cs" />
-    <Compile Include="OneArgument\Sin.Tests.cs" />
-    <Compile Include="OneArgument\Sqrt.Tests.cs" />
-    <Compile Include="TwoArguments\Multiplication.Tests.cs" />
-    <Compile Include="TwoArguments\Division.Tests.cs" />
+    <Compile Include="OneArgument\AbsoluteTests.cs" />
+    <Compile Include="OneArgument\CosTests.cs" />
+    <Compile Include="OneArgument\FactorialTests.cs" />
+    <Compile Include="OneArgument\OneArgumetFactoryTests.cs" />
+    <Compile Include="OneArgument\SinTests.cs" />
+    <Compile Include="OneArgument\SqrtTests.cs" />
+    <Compile Include="TwoArguments\MultiplicationTests.cs" />
+    <Compile Include="TwoArguments\DivisionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TwoArguments\Pow.Tests.cs" />
-    <Compile Include="TwoArguments\Subtraction.Tests.cs" />
-    <Compile Include="TwoArguments\Sum.Tests.cs" />
-    <Compile Include="TwoArguments\TwoArgumentFactory.Tests.cs" />
+    <Compile Include="TwoArguments\PowTests.cs" />
+    <Compile Include="TwoArguments\SubtractionTests.cs" />
+    <Compile Include="TwoArguments\SumTests.cs" />
+    <Compile Include="TwoArguments\TwoArgumentFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,9 +1,8 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Windows.Forms;
-using Calculator.TwoArgument;
 using Calculator.OneArgument;
 using Calculator.SortingOfMassivs;
+using Calculator.TwoArgument;
 
 namespace Calculator
 {
@@ -21,8 +20,8 @@ namespace Calculator
 
         private void SortingMassivs(object sender, EventArgs e)
         {
-           string [] split = FirstArgument.Text.Split(new Char[]{' ', ';'});
-           double[] array = new double[split.Length];
+            string [] split = FirstArgument.Text.Split(new Char[]{' ', ';'});
+            double[] array = new double[split.Length];
 
             for (int i = 0; i < split.Length; i++)
             {
@@ -32,7 +31,6 @@ namespace Calculator
             string operation = (((Button) sender).Name);
             var op = SortingOfMassivsFactory.CreateSorting(operation);
             double[] resultDoubleArray = op.Sort(array);
-
             string[] resultStringArray = new string[split.Length];
 
             for (int i = 0; i < array.Length; i++)
@@ -48,8 +46,6 @@ namespace Calculator
             }
 
             Result.Text = resultString;
-
-
         }
 
         private void CalculateTwoArgument(object sender, EventArgs e)
