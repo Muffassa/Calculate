@@ -49,7 +49,7 @@
     <Compile Include="OneArgument\SinTests.cs" />
     <Compile Include="OneArgument\SqrtTests.cs" />
     <Compile Include="SortinfOfMassivs\BubbleSortTests.cs" />
-    <Compile Include="SortinfOfMassivs\GhomeSortTests.cs" />
+    <Compile Include="SortinfOfMassivs\GnomeSortTests.cs" />
     <Compile Include="SortinfOfMassivs\HeapSortTests.cs" />
     <Compile Include="SortinfOfMassivs\InsertionSortTests.cs" />
     <Compile Include="TwoArguments\MultiplicationTests.cs" />

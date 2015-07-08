@@ -1,6 +1,6 @@
 ﻿namespace Calculator.SortingOfMassivs
 {
-    class GnomeSort:ISorter
+    public class GnomeSort:ISorter
     {
         public double[] Sort(double[] a)
         {
