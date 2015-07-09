@@ -1,7 +1,7 @@
-﻿using Calculator.SortingOfMassivs;
+﻿using Calculator.SortingOfArrays;
 using NUnit.Framework;
 
-namespace Calculator.Tests.SortingOfArrays
+namespace CalculatorTests.SortingOfArrays
 {
     [TestFixture]
     class HeapSortTests : AbstractSortTests

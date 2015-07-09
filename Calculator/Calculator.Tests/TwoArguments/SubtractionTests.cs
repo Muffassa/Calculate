@@ -1,7 +1,7 @@
 ﻿using Calculator.TwoArgument;
 using NUnit.Framework;
 
-namespace Calculator.Tests.TwoArguments
+namespace CalculatorTests.TwoArguments
 {
     [TestFixture]
     class SubtractionTests

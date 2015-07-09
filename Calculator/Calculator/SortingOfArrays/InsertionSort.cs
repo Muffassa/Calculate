@@ -1,4 +1,6 @@
-﻿namespace Calculator.SortingOfMassivs
+﻿using Calculator.SortingOfArrays;
+
+namespace Calculator.SortingOfArrays
 {
     public class InsertionSort : ISorter
     {

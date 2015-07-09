@@ -1,4 +1,4 @@
-﻿namespace Calculator.SortingOfMassivs
+﻿namespace Calculator.SortingOfArrays
 {
     public interface ISorter
     {

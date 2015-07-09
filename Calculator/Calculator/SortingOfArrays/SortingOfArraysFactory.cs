@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Calculator.SortingOfMassivs
+namespace Calculator.SortingOfArrays
 {
-    static class SortingOfMassivsFactory
+    public class SortingOfArraysFactory
     {
         public static ISorter CreateSorting(string operation)
         {

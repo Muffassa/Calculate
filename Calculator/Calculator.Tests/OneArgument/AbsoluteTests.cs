@@ -1,7 +1,7 @@
 ﻿using Calculator.OneArgument;
 using NUnit.Framework;
 
-namespace Calculator.Tests.OneArgument
+namespace CalculatorTests.OneArgument
 {
     [TestFixture]
     class AbsouluteTests

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Calculator.OneArgument;
-using Calculator.SortingOfMassivs;
+using Calculator.SortingOfArrays;
 using Calculator.TwoArgument;
 
 namespace Calculator
@@ -29,7 +29,7 @@ namespace Calculator
             }
 
             string operation = (((Button) sender).Name);
-            var op = SortingOfMassivsFactory.CreateSorting(operation);
+            var op = SortingOfArraysFactory.CreateSorting(operation);
             double[] resultDoubleArray = op.Sort(array);
             string[] resultStringArray = new string[split.Length];
 

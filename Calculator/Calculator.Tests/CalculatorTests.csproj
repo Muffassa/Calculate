@@ -53,6 +53,7 @@
     <Compile Include="SortingOfArrays\GnomeSortTests.cs" />
     <Compile Include="SortingOfArrays\HeapSortTests.cs" />
     <Compile Include="SortingOfArrays\InsertionSortTests.cs" />
+    <Compile Include="SortingOfArrays\SortingOfArraysFactoryTests.cs" />
     <Compile Include="TwoArguments\MultiplicationTests.cs" />
     <Compile Include="TwoArguments\DivisionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
