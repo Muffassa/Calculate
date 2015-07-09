@@ -2,6 +2,11 @@
 
 namespace Calculator.SortingOfArrays
 {
+    /// <summary>
+    /// Function for sorting array by insertion method
+    /// </summary>
+    /// <param name="a">calculate array</param>
+    /// <returns>sorted array</returns>
     public class InsertionSort : ISorter
     {
         public double[] Sort(double[] a)

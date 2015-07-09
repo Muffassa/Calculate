@@ -7,6 +7,10 @@ namespace Calculator.Tests.OneArgument
     [TestFixture]
     class SqrtTests
     {
+        /// <summary>
+        /// Test for operation Sqrt for one argument
+        /// </summary>
+        /// <param name="argument">argument which we will calculate sqrt </param>
         [TestCase(9)]
         [TestCase(25)]
         [TestCase(16)]

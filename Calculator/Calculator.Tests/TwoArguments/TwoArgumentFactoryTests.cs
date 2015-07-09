@@ -7,6 +7,11 @@ namespace Calculator.Tests.TwoArguments
     [TestFixture]
     class TwoArgumetFactoryTests
     {
+        /// <summary>
+        /// Function of testing factory for two arguments
+        /// </summary>
+        /// <param name="expectedTypeOfOperation">expected type of operation</param>
+        /// <param name="nameOfOperation">name of operation whitch type we will equalize expected type</param>
         [TestCase(typeof(Sum), "Sum")]
         [TestCase(typeof(Subtraction), "Subtraction")]
         [TestCase(typeof(Division), "Division")]

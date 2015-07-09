@@ -4,6 +4,11 @@ namespace Calculator.SortingOfArrays
 {
    public class HeapSort:ISorter
     {
+        /// <summary>
+        /// Function for sorting array by heap method
+        /// </summary>
+        /// <param name="a">calculate array</param>
+        /// <returns>sorted array</returns>
         public double[] Sort(double[] a)
         {
             int i;

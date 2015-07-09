@@ -5,7 +5,9 @@ namespace Calculator.Tests.SortingOfArrays
 {
     class BubbleSortTests : AbstractSortTests
     {
-
+        /// <summary>
+        /// test of bubbleSort function
+        /// </summary>
         [SetUp]
         public void Initialize()
         {

@@ -2,6 +2,9 @@
 
 namespace Calculator.SortingOfArrays
 {
+    /// <summary>
+    /// Factory of sorting for arrays
+    /// </summary>
     public static class SortingOfArraysFactory
     {
         public static ISorter CreateSorting(string operation)

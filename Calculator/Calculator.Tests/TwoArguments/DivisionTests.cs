@@ -8,6 +8,12 @@ namespace Calculator.Tests.TwoArguments
     [TestFixture]
     class DivisionTests
     {
+        /// <summary>
+        /// Test of division function
+        /// </summary>
+        /// <param name="firstArgument">dividend</param>
+        /// <param name="secondArgument">divisor</param>
+        /// <param name="result">quotient</param>
         [TestCase(10, 2, 5)]
         [TestCase(7, 2, 3.5)]
         [TestCase(-10, 2, -5)]

@@ -2,6 +2,10 @@
 
 namespace Calculator.OneArgument
 {
+
+    /// <summary>
+    /// Factory of operations for one argument
+    /// </summary>
     public static class OneArgumentFactory
     {
         public static IOperation CreateCalculator(string operation)

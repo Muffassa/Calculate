@@ -7,6 +7,12 @@ namespace Calculator.Tests.TwoArguments
     [TestFixture]
     class MultiplicationTests
     {
+        /// <summary>
+        /// Test of Multiplication function
+        /// </summary>
+        /// <param name="firstArgument">first argument of multiplication</param>
+        /// <param name="secondArgument">second argument of multiplication</param>
+        /// <param name="result">expected cup product</param>
         [TestCase(10, 2, 20)]
         [TestCase(7, 2, 14)]
         [TestCase(-7, 2, -14)]

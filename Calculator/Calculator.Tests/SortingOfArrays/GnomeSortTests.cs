@@ -6,6 +6,9 @@ namespace Calculator.Tests.SortingOfArrays
     [TestFixture]
     class GnomeSortTests : AbstractSortTests
     {
+        /// <summary>
+        /// test of GnomeSort function
+        /// </summary>
         [SetUp]
         public void Initialize()
         {

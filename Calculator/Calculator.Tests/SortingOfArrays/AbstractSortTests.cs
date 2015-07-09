@@ -6,8 +6,13 @@ namespace Calculator.Tests.SortingOfArrays
     [TestFixture]
     public abstract class AbstractSortTests
     {
+      
         protected ISorter Sorter;
-
+        /// <summary>
+        /// Function where we will test results
+        /// </summary>
+        /// <param name="argument">sours array which we will sort</param>
+        /// <param name="result">expecter result of sort</param>
         [TestCase(new [] { 12, -3, 0.0 }, new [] { -3, 0.0, 12 })]
         [TestCase(new [] {0,1.2,2,3.1,4}, new []{0,1.2,2,3.1,4})]
         [TestCase(new []{7.2,5,3,2.1,0}, new[]{0,2.1,3,5, 7.2})]
