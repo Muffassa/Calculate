@@ -48,10 +48,11 @@
     <Compile Include="OneArgument\OneArgumetFactoryTests.cs" />
     <Compile Include="OneArgument\SinTests.cs" />
     <Compile Include="OneArgument\SqrtTests.cs" />
-    <Compile Include="SortinfOfMassivs\BubbleSortTests.cs" />
-    <Compile Include="SortinfOfMassivs\GnomeSortTests.cs" />
-    <Compile Include="SortinfOfMassivs\HeapSortTests.cs" />
-    <Compile Include="SortinfOfMassivs\InsertionSortTests.cs" />
+    <Compile Include="SortingOfArrays\AbstractSortTests.cs" />
+    <Compile Include="SortingOfArrays\BubbleSortTests.cs" />
+    <Compile Include="SortingOfArrays\GnomeSortTests.cs" />
+    <Compile Include="SortingOfArrays\HeapSortTests.cs" />
+    <Compile Include="SortingOfArrays\InsertionSortTests.cs" />
     <Compile Include="TwoArguments\MultiplicationTests.cs" />
     <Compile Include="TwoArguments\DivisionTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
