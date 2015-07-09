@@ -6,16 +6,14 @@ namespace Calculator.SortingOfArrays
     {
         public double[] Sort (double[] a)
         {
-            for (int j = 0; j < a.Length - 1; j++)
+            for (var j = 0; j < a.Length - 1; j++)
             {
-                for (int i = 0; i < a.Length - j - 1; i++)
+                for (var i = 0; i < a.Length - j - 1; i++)
                 {
-                    if (a[i] > a[i + 1])
-                    {
-                        double b = a[i]; //change for elements
-                        a[i] = a[i + 1];
-                        a[i + 1] = b;
-                    }
+                    if (!(a[i] > a[i + 1])) continue;
+                    var b = a[i]; //change for elements
+                    a[i] = a[i + 1];
+                    a[i + 1] = b;
                 }
             }
             return a;

@@ -13,10 +13,7 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private double StringToDouble(string text)
-        {
-            return double.Parse(text);
-        }
+       
 
         private void SortingMassivs(object sender, EventArgs e)
         {
@@ -25,7 +22,7 @@ namespace Calculator
 
             for (int i = 0; i < split.Length; i++)
             {
-                array[i] = StringToDouble(split[i]);
+                array[i] = Validation.StringToDouble(split[i]);
             }
 
             string operation = (((Button) sender).Name);
@@ -50,8 +47,8 @@ namespace Calculator
 
         private void CalculateTwoArgument(object sender, EventArgs e)
         {
-            double firstArgument = StringToDouble(FirstArgument.Text);
-            double secondArgument = StringToDouble(SecondArgument.Text);
+            double firstArgument = Validation.StringToDouble(FirstArgument.Text);
+            double secondArgument = Validation.StringToDouble(SecondArgument.Text);
             string operation = (((Button) sender).Name);
             var op = TwoArgumentFactory.CreateCalculator(operation);
             double result = op.Calculate(firstArgument, secondArgument);
@@ -60,7 +57,7 @@ namespace Calculator
 
         private void CalculateOneArgument(object sender, EventArgs e)
         {
-            double firstArgument = StringToDouble(FirstArgument.Text);
+            double firstArgument = Validation.StringToDouble(FirstArgument.Text);
             string operation = (((Button)sender).Name);
             var op = OneArgumentFactory.CreateCalculator(operation);
             double result = op.Calculate(firstArgument);

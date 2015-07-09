@@ -2,7 +2,7 @@
 
 namespace Calculator.SortingOfArrays
 {
-    public class SortingOfArraysFactory
+    public static class SortingOfArraysFactory
     {
         public static ISorter CreateSorting(string operation)
         {

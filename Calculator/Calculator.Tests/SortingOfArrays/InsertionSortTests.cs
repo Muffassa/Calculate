@@ -1,7 +1,7 @@
 ﻿using Calculator.SortingOfArrays;
 using NUnit.Framework;
 
-namespace CalculatorTests.SortingOfArrays
+namespace Calculator.Tests.SortingOfArrays
 {
     [TestFixture]
     public class InsertionSortTests : AbstractSortTests

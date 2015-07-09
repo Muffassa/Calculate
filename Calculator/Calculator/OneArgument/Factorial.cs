@@ -13,7 +13,7 @@ namespace Calculator.OneArgument
             else
             {
                 double result = 1;
-                for (int i = 1; i < firstArgument; i++)
+                for (var i = 1; i < firstArgument; i++)
                 {
                     result *= i + 1;
                 }

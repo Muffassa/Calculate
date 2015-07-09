@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgument
 {
-    public class OneArgumentFactory
+    public static class OneArgumentFactory
     {
         public static IOperation CreateCalculator(string operation)
         {

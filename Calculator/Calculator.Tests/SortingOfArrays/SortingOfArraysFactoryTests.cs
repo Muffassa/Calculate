@@ -2,7 +2,7 @@
 using Calculator.SortingOfArrays;
 using NUnit.Framework;
 
-namespace CalculatorTests.SortingOfArrays
+namespace Calculator.Tests.SortingOfArrays
 {
     [TestFixture]
     class SortingOfArraysTests

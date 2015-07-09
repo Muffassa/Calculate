@@ -22,11 +22,9 @@ namespace Calculator.SortingOfArrays
                     a[i - 1] = a[i];
                     a[i] = tmp;
                     i -= 1;
-                    if (i == 0)
-                    {
-                        i = 1;
-                        j = 2;
-                    }
+                    if (i != 0) continue;
+                    i = 1;
+                    j = 2;
                 }
             }
             return a;

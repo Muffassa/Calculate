@@ -1,7 +1,7 @@
 ﻿using Calculator.OneArgument;
 using NUnit.Framework;
 
-namespace CalculatorTests.OneArgument
+namespace Calculator.Tests.OneArgument
 {
     [TestFixture]
     class CosTests
