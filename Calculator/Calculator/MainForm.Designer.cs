@@ -179,7 +179,7 @@ namespace Calculator
             this.BubbleSort.TabIndex = 24;
             this.BubbleSort.Text = "BubbleSort";
             this.BubbleSort.UseVisualStyleBackColor = true;
-            this.BubbleSort.Click += new System.EventHandler(this.SortingMassivs);
+            this.BubbleSort.Click += new System.EventHandler(this.SortingArrays);
             // 
             // InsertionSort
             // 
@@ -189,7 +189,7 @@ namespace Calculator
             this.InsertionSort.TabIndex = 25;
             this.InsertionSort.Text = "IsertionSort";
             this.InsertionSort.UseVisualStyleBackColor = true;
-            this.InsertionSort.Click += new System.EventHandler(this.SortingMassivs);
+            this.InsertionSort.Click += new System.EventHandler(this.SortingArrays);
             // 
             // HeapSort
             // 
@@ -199,7 +199,7 @@ namespace Calculator
             this.HeapSort.TabIndex = 26;
             this.HeapSort.Text = "HeapSort";
             this.HeapSort.UseVisualStyleBackColor = true;
-            this.HeapSort.Click += new System.EventHandler(this.SortingMassivs);
+            this.HeapSort.Click += new System.EventHandler(this.SortingArrays);
             // 
             // GnomeSort
             // 
@@ -209,7 +209,7 @@ namespace Calculator
             this.GnomeSort.TabIndex = 27;
             this.GnomeSort.Text = "GnomeSort";
             this.GnomeSort.UseVisualStyleBackColor = true;
-            this.GnomeSort.Click += new System.EventHandler(this.SortingMassivs);
+            this.GnomeSort.Click += new System.EventHandler(this.SortingArrays);
             // 
             // MainForm
             // 
